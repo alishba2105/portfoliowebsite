@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alishba Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h1 class="logo">Alishba</h1>
+  <div class="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button id="themeToggle" class="theme-toggle">🌙</button>
+</nav>
+
+<header class="hero">
+  <img src="images/profile.jpg" alt="Alishba" class="profile-photo">
+  <h1 id="typing"></h1>
+  <p class="subtitle">Computer Engineering Student <p> At Fr. Conceicao Rodrigues College of Engineering.</p> <p>Blending Technology with Creativity!</p>
+</header>
+
+<section id="about" class="section glass">
+  <h2>About Me</h2>
+  <p>I am a Computer Science Engineering student with a strong passion for web development and user-focused digital design. I create clean, responsive, and visually striking websites where creativity and functionality come together with intention.
+
+Beyond coding, I draw inspiration from baking, painting, and time spent in nature—creative pursuits that refine my eye for detail and design. I am also an avid reader of thriller and suspense novels, which shapes my approach to structure, storytelling, and strategic problem-solving.
+
+Driven by curiosity and a commitment to growth, I strive to craft digital experiences that are intuitive, elegant, and impactful. I love creating aesthetic, interactive, and elegant web experiences using HTML, CSS, and JavaScript. I enjoy blending creativity with technology.</p>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <ul>
+        <li>HTML - 90%</li>
+        <li>CSS - 85%</li>
+        <li>JavaScript - 75%</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Design</h3>
+      <ul>
+        <li>UI/UX Design - 80%</li>
+        <li>Creativity - 95%</li>
+        <li>Visual Aesthetics - 90%</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3>Tools</h3>
+      <ul>
+        <li>VS Code</li>
+        <li>Canva</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section glass">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="images/natyashastra.jpg" alt="Natyashastra Poster">
+      <h3>Natyashastra Poster</h3>
+      <p>Educational performing arts poster.<br><small>Canva / Photoshop</small></p>
+    </div>
+
+    <div class="project-card">
+      <img src="images/portfolio.jpg" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>Responsive portfolio website.<br><small>HTML, CSS, JS</small></p>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project.jpg" alt="Presentation Project">
+      <h3>Presentation Design</h3>
+      <p>Creative academic presentation.<br><small>PowerPoint</small></p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="section">
+  <h2>Certificates</h2>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <img src="certificates/cert1.jpg" alt="Certificate 1">
+      <div class="cert-buttons">
+        <a href="certificates/cert1.jpg" target="_blank" class="btn-view">View</a>
+        <a href="certificates/html-certificate 1.pdf" download class="btn-download">Download</a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="certificates/cert2.jpg" alt="Certificate 2">
+      <div class="cert-buttons">
+        <a href="certificates/cert2.jpg" target="_blank" class="btn-view">View</a>
+        <a href="certificates/certificate 3.pdf" download class="btn-download">Download</a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <img src="certificates/cert3.jpg" alt="Certificate 3">
+      <div class="cert-buttons">
+        <a href="certificates/cert3.jpg" target="_blank" class="btn-view">View</a>
+        <a href="certificates/html-certificate 2.pdf" download class="btn-download">Download</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section glass">
+  <h2>Gallery</h2>
+  <div class="carousel" id="carousel">
+    <img src="images/IMG_3634.jpg" alt="">
+    <img src="images/IMG_7103.JPG" alt="">
+    <img src="images/marine.jpg" alt="">
+    <img src="images/IMG_6638.JPG" alt="">
+    <img src="images/IMG_7250.JPG" alt="">
+    <img src="images/IMG_1827.jpg" alt="">
+  </div>
+</section>
+
+<section id="contact" class="section glass">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+    <a href="mailto:alishba.k.shaikh@gmail.com">📧 Gmail</a>
+    <a href="https://github.com/alishba2105" target="_blank">💻 GitHub</a>
+    <a href="https://instagram.com/alishbashaikh210" target="_blank">📷 Instagram</a>
+  </div>
+
+  <form action="https://formspree.io/f/mblnnkgo" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message ✨</button>
+  </form>
+</section>
+
+<footer> </footer>
+<script src="script.js"></script>
+</body>
+</html>
