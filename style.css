@@ -431,3 +431,60 @@ body::before {
     transform: translate(0, 0);
   }
 }
+/* =====================================
+   DREAMY PASTEL BUBBLES + SPARKLES
+   ===================================== */
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Sparkling stars */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.9) 1px, transparent 2px),
+    radial-gradient(circle, rgba(255,220,230,0.8) 1.5px, transparent 3px),
+    radial-gradient(circle, rgba(255,255,255,0.6) 1px, transparent 2px);
+  background-size: 120px 120px, 200px 200px, 300px 300px;
+  animation: sparkle 5s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Floating pastel bubbles */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(255,200,215,0.35) 10px, transparent 14px),
+    radial-gradient(circle, rgba(255,230,240,0.3) 16px, transparent 22px),
+    radial-gradient(circle, rgba(255,255,255,0.25) 22px, transparent 30px);
+  background-size: 300px 300px, 500px 500px, 700px 700px;
+  animation: floatUp 90s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Animations */
+@keyframes sparkle {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-600px);
+  }
+}
